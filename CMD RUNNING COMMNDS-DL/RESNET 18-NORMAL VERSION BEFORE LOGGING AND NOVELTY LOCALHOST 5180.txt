@@ -1,0 +1,244 @@
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>cd /d "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18>.venv\Scripts\activate
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18>python -m uvicorn backend.main:app --host 127.0.0.1 --port 8010
+INFO:     Started server process [3104]
+INFO:     Waiting for application startup.
+[INFO] Device: CPU
+[INFO] Classifier: ResNet18 | Models loaded
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8010 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62597 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63893 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51248 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64446 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63358 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52490 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60158 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51107 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59857 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52511 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50264 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57535 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53045 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54627 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58010 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60530 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57407 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52611 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50500 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64746 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49960 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52251 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51739 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59853 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51453 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56941 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55056 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60012 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52832 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54645 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60548 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52665 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51024 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58554 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65156 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51911 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53627 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63105 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49965 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58590 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59343 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63634 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55095 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51280 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53066 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51744 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56944 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64559 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64026 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49239 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53878 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53587 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52784 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52709 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49604 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49993 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57318 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54926 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54471 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58770 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58024 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50609 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57450 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49306 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64753 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62362 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60839 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50213 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54538 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55794 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59238 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50960 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51075 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53003 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56590 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56517 - "POST /predict HTTP/1.1" 200 OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>cd /d "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>npm run dev -- --host 127.0.0.1 --port 5180
+
+> vehicle-damage-frontend-resnet18@2.0.0 dev
+> vite --host 127.0.0.1 --port 5180
+
+
+  VITE v5.4.21  ready in 425 ms
+
+  ➜  Local:   http://127.0.0.1:5180/
+  ➜  press h + enter to show help
+12:16:52 am [vite] vite.config.js changed, restarting server...
+12:16:52 am [vite] server restarted.
+Terminate batch job (Y/N)? y
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>npm run dev -- --host 127.0.0.1 --port 5180
+
+> vehicle-damage-frontend-resnet18@2.0.0 dev
+> vite --host 127.0.0.1 --port 5180
+
+
+  VITE v5.4.21  ready in 296 ms
+
+  ➜  Local:   http://127.0.0.1:5180/
+  ➜  press h + enter to show help
+12:17:23 am [vite] vite.config.js changed, restarting server...
+12:17:23 am [vite] server restarted.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>cd /d "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>findstr /S /I /N /C:"localhost:8000" /C:"localhost:8001" /C:"localhost:8010" /C:"127.0.0.1:8000" /C:"127.0.0.1:8001" /C:"127.0.0.1:8010" /C:"start_backend.bat" src\*.js src\*.jsx src\*.ts src\*.tsx *.js *.json *.env
+src\App.jsx:35:      setError(e.message === "Failed to fetch" ? "Cannot reach the backend. Start it with start_backend.bat." : e.message);
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>cd /d "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>notepad src\App.jsx
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>findstr /S /I /N /C:"fetch(" /C:"axios" /C:"API_URL" /C:"VITE_API" /C:"/predict" /C:"/api" src\*.js src\*.jsx src\*.ts src\*.tsx
+src\App.jsx:30:      const r = await fetch("/api/predict", { method: "POST", body: fd });
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>curl -i http://127.0.0.1:8010/docs
+HTTP/1.1 200 OK
+date: Fri, 09 Oct 2026 18:42:24 GMT
+server: uvicorn
+content-length: 1049
+content-type: text/html; charset=utf-8
+vary: Origin
+
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui.css">
+    <link rel="shortcut icon" href="https://fastapi.tiangolo.com/img/favicon.png">
+    <title>AI Vehicle Damage Assessment (ResNet18 classifier) - Swagger UI</title>
+    </head>
+    <body>
+    <div id="swagger-ui">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swagger-ui-dist@5/swagger-ui-bundle.js"></script>
+    <!-- `SwaggerUIBundle` is now available on the page -->
+    <script>
+    const ui = SwaggerUIBundle({
+        url: '/openapi.json',
+    "dom_id": "#swagger-ui",
+"layout": "BaseLayout",
+"deepLinking": true,
+"showExtensions": true,
+"showCommonExtensions": true,
+oauth2RedirectUrl: window.location.origin + '/docs/oauth2-redirect',
+    presets: [
+        SwaggerUIBundle.presets.apis,
+        SwaggerUIBundle.SwaggerUIStandalonePreset
+        ],
+    })
+    </script>
+    </body>
+    </html>
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>cd /d "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>dir vite.config.*
+ Volume in drive D is New Volume
+ Volume Serial Number is 06DA-DF55
+
+ Directory of D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend
+
+09-10-2026  23:21               258 vite.config.js
+               1 File(s)            258 bytes
+               0 Dir(s)  199,855,947,776 bytes free
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>notepad vite.config.js
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-ResNet18\frontend>

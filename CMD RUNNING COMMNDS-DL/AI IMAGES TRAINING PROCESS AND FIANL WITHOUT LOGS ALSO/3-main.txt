@@ -1,0 +1,1132 @@
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>cd /d "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python -m venv .venv
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>.venv\Scripts\activate
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>pip install -r requirements.txt
+Collecting torch (from -r requirements.txt (line 1))
+  Downloading torch-2.14.1-cp311-cp311-win_amd64.whl.metadata (38 kB)
+Collecting torchvision (from -r requirements.txt (line 2))
+  Downloading torchvision-0.29.1-cp311-cp311-win_amd64.whl.metadata (5.7 kB)
+Collecting fastapi (from -r requirements.txt (line 3))
+  Downloading fastapi-0.142.2-py3-none-any.whl.metadata (27 kB)
+Collecting python-multipart (from -r requirements.txt (line 5))
+  Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Collecting pillow (from -r requirements.txt (line 6))
+  Using cached pillow-12.3.0-cp311-cp311-win_amd64.whl.metadata (9.3 kB)
+Collecting numpy (from -r requirements.txt (line 7))
+  Using cached numpy-2.4.6-cp311-cp311-win_amd64.whl.metadata (6.6 kB)
+Collecting pandas (from -r requirements.txt (line 8))
+  Downloading pandas-3.0.6-cp311-cp311-win_amd64.whl.metadata (19 kB)
+Collecting scikit-learn (from -r requirements.txt (line 9))
+  Downloading scikit_learn-1.9.1-cp311-cp311-win_amd64.whl.metadata (9.3 kB)
+Collecting pyyaml (from -r requirements.txt (line 10))
+  Using cached pyyaml-6.0.3-cp311-cp311-win_amd64.whl.metadata (2.4 kB)
+Collecting uvicorn[standard] (from -r requirements.txt (line 4))
+  Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting filelock (from torch->-r requirements.txt (line 1))
+  Downloading filelock-4.0.10-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch->-r requirements.txt (line 1))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=77.0.3 (from torch->-r requirements.txt (line 1))
+  Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy>=1.13.3 (from torch->-r requirements.txt (line 1))
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch->-r requirements.txt (line 1))
+  Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch->-r requirements.txt (line 1))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=0.8.5 (from torch->-r requirements.txt (line 1))
+  Downloading fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting starlette>=0.46.0 (from fastapi->-r requirements.txt (line 3))
+  Downloading starlette-1.7.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting pydantic>=2.9.0 (from fastapi->-r requirements.txt (line 3))
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 110.2/110.2 kB 425.3 kB/s eta 0:00:00
+Collecting typing-inspection>=0.4.2 (from fastapi->-r requirements.txt (line 3))
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi->-r requirements.txt (line 3))
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting opentelemetry-api>=1.44.0 (from fastapi->-r requirements.txt (line 3))
+  Downloading opentelemetry_api-1.45.0-py3-none-any.whl.metadata (1.4 kB)
+Collecting click>=7.0 (from uvicorn[standard]->-r requirements.txt (line 4))
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting h11>=0.8 (from uvicorn[standard]->-r requirements.txt (line 4))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting httptools>=0.8.0 (from uvicorn[standard]->-r requirements.txt (line 4))
+  Using cached httptools-0.8.0-cp311-cp311-win_amd64.whl.metadata (3.7 kB)
+Collecting python-dotenv>=0.13 (from uvicorn[standard]->-r requirements.txt (line 4))
+  Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Collecting watchfiles>=0.20 (from uvicorn[standard]->-r requirements.txt (line 4))
+  Downloading watchfiles-1.3.0-cp310-abi3-win_amd64.whl.metadata (5.0 kB)
+Collecting websockets>=13.0 (from uvicorn[standard]->-r requirements.txt (line 4))
+  Downloading websockets-17.2-cp311-cp311-win_amd64.whl.metadata (6.5 kB)
+Collecting python-dateutil>=2.8.2 (from pandas->-r requirements.txt (line 8))
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting tzdata (from pandas->-r requirements.txt (line 8))
+  Downloading tzdata-2026.5-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting scipy>=1.10.0 (from scikit-learn->-r requirements.txt (line 9))
+  Using cached scipy-1.17.1-cp311-cp311-win_amd64.whl.metadata (60 kB)
+Collecting joblib>=1.4.0 (from scikit-learn->-r requirements.txt (line 9))
+  Using cached joblib-1.6.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting narwhals>=2.0.1 (from scikit-learn->-r requirements.txt (line 9))
+  Downloading narwhals-2.26.0-py3-none-any.whl.metadata (15 kB)
+Collecting threadpoolctl>=3.5.0 (from scikit-learn->-r requirements.txt (line 9))
+  Downloading threadpoolctl-3.7.0-py3-none-any.whl.metadata (24 kB)
+Collecting cloudpickle>=3.0 (from joblib>=1.4.0->scikit-learn->-r requirements.txt (line 9))
+  Using cached cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi->-r requirements.txt (line 3))
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.5 (from pydantic>=2.9.0->fastapi->-r requirements.txt (line 3))
+  Downloading pydantic_core-2.46.5-cp311-cp311-win_amd64.whl.metadata (6.7 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas->-r requirements.txt (line 8))
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting anyio<5,>=4.0.0 (from starlette>=0.46.0->fastapi->-r requirements.txt (line 3))
+  Using cached anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch->-r requirements.txt (line 1))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch->-r requirements.txt (line 1))
+  Downloading markupsafe-3.0.4-cp311-cp311-win_amd64.whl.metadata (2.8 kB)
+Collecting idna>=2.8 (from anyio<5,>=4.0.0->starlette>=0.46.0->fastapi->-r requirements.txt (line 3))
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Downloading torch-2.14.1-cp311-cp311-win_amd64.whl (124.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 124.1/124.1 MB 1.8 MB/s eta 0:00:00
+Downloading torchvision-0.29.1-cp311-cp311-win_amd64.whl (1.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.4/1.4 MB 1.2 MB/s eta 0:00:00
+Downloading fastapi-0.142.2-py3-none-any.whl (144 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.4/144.4 kB 1.1 MB/s eta 0:00:00
+Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Using cached pillow-12.3.0-cp311-cp311-win_amd64.whl (7.2 MB)
+Using cached numpy-2.4.6-cp311-cp311-win_amd64.whl (12.6 MB)
+Downloading pandas-3.0.6-cp311-cp311-win_amd64.whl (9.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.9/9.9 MB 771.5 kB/s eta 0:00:00
+Downloading scikit_learn-1.9.1-cp311-cp311-win_amd64.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 858.8 kB/s eta 0:00:00
+Using cached pyyaml-6.0.3-cp311-cp311-win_amd64.whl (158 kB)
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Downloading fsspec-2026.9.0-py3-none-any.whl (221 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 221.7/221.7 kB 614.8 kB/s eta 0:00:00
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached httptools-0.8.0-cp311-cp311-win_amd64.whl (90 kB)
+Using cached joblib-1.6.0-py3-none-any.whl (306 kB)
+Downloading narwhals-2.26.0-py3-none-any.whl (474 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 474.0/474.0 kB 823.8 kB/s eta 0:00:00
+Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+Downloading opentelemetry_api-1.45.0-py3-none-any.whl (60 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 kB 3.1 MB/s eta 0:00:00
+Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 472.6/472.6 kB 821.2 kB/s eta 0:00:00
+Downloading pydantic_core-2.46.5-cp311-cp311-win_amd64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 1.1 MB/s eta 0:00:00
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Using cached scipy-1.17.1-cp311-cp311-win_amd64.whl (36.6 MB)
+Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)
+Downloading starlette-1.7.0-py3-none-any.whl (78 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.0/79.0 kB ? eta 0:00:00
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Downloading threadpoolctl-3.7.0-py3-none-any.whl (26 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Downloading watchfiles-1.3.0-cp310-abi3-win_amd64.whl (290 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 290.6/290.6 kB 1.1 MB/s eta 0:00:00
+Downloading websockets-17.2-cp311-cp311-win_amd64.whl (218 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 218.5/218.5 kB 168.8 kB/s eta 0:00:00
+Downloading filelock-4.0.10-py3-none-any.whl (111 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.2/111.2 kB 46.5 kB/s eta 0:00:00
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading tzdata-2026.5-py2.py3-none-any.whl (347 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.0/348.0 kB 697.8 kB/s eta 0:00:00
+Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.4/87.4 kB 821.1 kB/s eta 0:00:00
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached anyio-4.15.1-py3-none-any.whl (132 kB)
+Using cached cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading markupsafe-3.0.4-cp311-cp311-win_amd64.whl (14 kB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Installing collected packages: mpmath, websockets, tzdata, typing-extensions, threadpoolctl, sympy, six, setuptools, pyyaml, python-multipart, python-dotenv, pillow, numpy, networkx, narwhals, MarkupSafe, idna, httptools, h11, fsspec, filelock, cloudpickle, click, annotated-types, annotated-doc, uvicorn, typing-inspection, scipy, python-dateutil, pydantic-core, opentelemetry-api, joblib, jinja2, anyio, watchfiles, torch, starlette, scikit-learn, pydantic, pandas, torchvision, fastapi
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 65.5.0
+    Uninstalling setuptools-65.5.0:
+      Successfully uninstalled setuptools-65.5.0
+Successfully installed MarkupSafe-3.0.4 annotated-doc-0.0.5 annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 cloudpickle-3.1.2 fastapi-0.142.2 filelock-4.0.10 fsspec-2026.9.0 h11-0.16.0 httptools-0.8.0 idna-3.20 jinja2-3.1.6 joblib-1.6.0 mpmath-1.3.0 narwhals-2.26.0 networkx-3.6.1 numpy-2.4.6 opentelemetry-api-1.45.0 pandas-3.0.6 pillow-12.3.0 pydantic-2.13.5 pydantic-core-2.46.5 python-dateutil-2.9.0.post0 python-dotenv-1.2.4 python-multipart-0.0.32 pyyaml-6.0.3 scikit-learn-1.9.1 scipy-1.17.1 setuptools-84.0.0 six-1.17.0 starlette-1.7.0 sympy-1.14.0 threadpoolctl-3.7.0 torch-2.14.1 torchvision-0.29.1 typing-extensions-4.16.0 typing-inspection-0.4.4 tzdata-2026.5 uvicorn-0.54.0 watchfiles-1.3.0 websockets-17.2
+
+[notice] A new release of pip is available: 24.0 -> 26.2.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\inventory_datasets.py
+Project root: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL | exists: True
+data.csv rows=1594 columns=['Unnamed: 0', 'image', 'classes']
+  unique values in 'Unnamed: 0': 1594
+  unique values in 'image': 1512
+Car damages dataset: 2994 images
+Car parts dataset: 2442 images
+image: 1512 images
+AI_VEHICLE_DATASET: 6226 images
+outputs/internal_test_images: 21 images
+  AI generator/folder 'Dalle': 252 images
+  AI generator/folder 'Kandinsky': 999 images
+  AI generator/folder 'Midjourney': 1160 images
+  AI generator/folder 'SDXL': 999 images
+  AI generator/folder 'UnCLIP': 2816 images
+
+*.pth:
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\distutils-precedence.pth
+   outputs\binary_classification_model\best_binary_efficientnet_b0.pth
+   outputs\classification_model\best_efficientnet_b0.pth
+   outputs\segmentation_model\best_unet_resnet18.pth
+
+*.pt:
+
+*.csv:
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-arccos.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-arccosh.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-arcsin.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-arcsinh.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-arctan.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-arctanh.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-cbrt.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-cos.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-cosh.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-exp.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-exp2.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-expm1.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-log.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-log10.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-log1p.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-log2.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-sin.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-sinh.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-tan.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\_core\tests\data\umath-validation-set-tanh.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\mt19937-testset-1.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\mt19937-testset-2.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\pcg64-testset-1.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\pcg64-testset-2.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\pcg64dxsm-testset-1.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\pcg64dxsm-testset-2.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\philox-testset-1.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\philox-testset-2.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\sfc64-testset-1.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\numpy\random\tests\data\sfc64-testset-2.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\sklearn\datasets\data\breast_cancer.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\sklearn\datasets\data\iris.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\sklearn\datasets\data\linnerud_exercise.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\sklearn\datasets\data\linnerud_physiological.csv
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\sklearn\datasets\data\wine_data.csv
+   data.csv
+   outputs\binary_classification_dataset\binary_labels.csv
+   outputs\binary_classification_dataset\splits\test.csv
+   outputs\binary_classification_dataset\splits\train.csv
+   outputs\binary_classification_dataset\splits\validation.csv
+   outputs\binary_classification_model\binary_test_predictions.csv
+   outputs\classification_dataset\classification_labels.csv
+   outputs\classification_dataset\splits\test.csv
+   outputs\classification_dataset\splits\train.csv
+   outputs\classification_dataset\splits\validation.csv
+   outputs\final_pipeline\end_to_end_internal_results.csv
+   outputs\final_pipeline\final_assessment_summary.csv
+   outputs\final_pipeline\final_pipeline_metrics.csv
+   outputs\final_pipeline\final_project_evaluation.csv
+   outputs\integrated_assessment\final_assessment_scores.csv
+   outputs\integrated_assessment\final_insurance_assessment.csv
+   outputs\integrated_assessment\integrated_assessment_features.csv
+   outputs\internal_test_images\internal_test_21.csv
+   outputs\phase1_dataset_report.csv
+   outputs\segmentation_dataset\splits\test.csv
+   outputs\segmentation_dataset\splits\train.csv
+   outputs\segmentation_dataset\splits\validation.csv
+   outputs\segmentation_features\damage_area_severity_features.csv
+
+*.json:
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\pillow-12.3.0.dist-info\sboms\pillow-12.3.0.cdx.json
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\pydantic_core-2.46.5.dist-info\sboms\pydantic-core.cyclonedx.json
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\scipy\stats\tests\data\studentized_range_mpmath_ref.json
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\setuptools\config\distutils.schema.json
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\setuptools\config\setuptools.schema.json
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\torch\_dynamo\graph_break_registry.json
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\watchfiles-1.3.0.dist-info\sboms\watchfiles_rust_notify.cyclonedx.json
+   AI-Vehicle-Damage-Assessment-Final\frontend\package.json
+   AI_VEHICLE_DATASET\Dalle\.cache\huggingface\trees\f7ef1bef1c7dc7bad9dd73320ec0e58f4a8277fd.json
+   AI_VEHICLE_DATASET\Kandinsky\.cache\huggingface\trees\f7ef1bef1c7dc7bad9dd73320ec0e58f4a8277fd.json
+   AI_VEHICLE_DATASET\Midjourney\.cache\huggingface\trees\f7ef1bef1c7dc7bad9dd73320ec0e58f4a8277fd.json
+   AI_VEHICLE_DATASET\SDXL\.cache\huggingface\trees\f7ef1bef1c7dc7bad9dd73320ec0e58f4a8277fd.json
+   AI_VEHICLE_DATASET\UnCLIP\.cache\huggingface\trees\f7ef1bef1c7dc7bad9dd73320ec0e58f4a8277fd.json
+   Car damages dataset\File1\ann\Car damages 100.png.json
+   Car damages dataset\File1\ann\Car damages 101.png.json
+   Car damages dataset\File1\ann\Car damages 102.jpg.json
+   Car damages dataset\File1\ann\Car damages 103.png.json
+   Car damages dataset\File1\ann\Car damages 1031.jpg.json
+   Car damages dataset\File1\ann\Car damages 1032.png.json
+   Car damages dataset\File1\ann\Car damages 1033.png.json
+   Car damages dataset\File1\ann\Car damages 1034.png.json
+   Car damages dataset\File1\ann\Car damages 1035.png.json
+   Car damages dataset\File1\ann\Car damages 1036.png.json
+   Car damages dataset\File1\ann\Car damages 1037.png.json
+   Car damages dataset\File1\ann\Car damages 1038.png.json
+   Car damages dataset\File1\ann\Car damages 1039.png.json
+   Car damages dataset\File1\ann\Car damages 104.png.json
+   Car damages dataset\File1\ann\Car damages 1040.png.json
+   Car damages dataset\File1\ann\Car damages 1041.png.json
+   Car damages dataset\File1\ann\Car damages 1042.png.json
+   Car damages dataset\File1\ann\Car damages 1043.jpg.json
+   Car damages dataset\File1\ann\Car damages 1044.png.json
+   Car damages dataset\File1\ann\Car damages 1045.png.json
+   Car damages dataset\File1\ann\Car damages 1046.png.json
+   Car damages dataset\File1\ann\Car damages 1047.png.json
+   Car damages dataset\File1\ann\Car damages 1048.png.json
+   Car damages dataset\File1\ann\Car damages 1049.png.json
+   Car damages dataset\File1\ann\Car damages 105.png.json
+   Car damages dataset\File1\ann\Car damages 1050.png.json
+   Car damages dataset\File1\ann\Car damages 1051.png.json
+   Car damages dataset\File1\ann\Car damages 1052.png.json
+   Car damages dataset\File1\ann\Car damages 1053.png.json
+   Car damages dataset\File1\ann\Car damages 1054.png.json
+   Car damages dataset\File1\ann\Car damages 1055.jpg.json
+   Car damages dataset\File1\ann\Car damages 1056.png.json
+   Car damages dataset\File1\ann\Car damages 1057.png.json
+   Car damages dataset\File1\ann\Car damages 1058.png.json
+   Car damages dataset\File1\ann\Car damages 1059.png.json
+   Car damages dataset\File1\ann\Car damages 106.png.json
+   Car damages dataset\File1\ann\Car damages 1060.png.json
+   Car damages dataset\File1\ann\Car damages 1061.png.json
+   Car damages dataset\File1\ann\Car damages 1062.png.json
+   Car damages dataset\File1\ann\Car damages 1063.png.json
+   Car damages dataset\File1\ann\Car damages 1064.png.json
+   Car damages dataset\File1\ann\Car damages 1065.png.json
+   Car damages dataset\File1\ann\Car damages 1066.png.json
+   Car damages dataset\File1\ann\Car damages 1067.jpg.json
+   Car damages dataset\File1\ann\Car damages 1068.png.json
+   Car damages dataset\File1\ann\Car damages 1069.png.json
+   Car damages dataset\File1\ann\Car damages 107.png.json
+   Car damages dataset\File1\ann\Car damages 1070.png.json
+   Car damages dataset\File1\ann\Car damages 1071.png.json
+   Car damages dataset\File1\ann\Car damages 1072.png.json
+   Car damages dataset\File1\ann\Car damages 1073.png.json
+   Car damages dataset\File1\ann\Car damages 1074.png.json
+   Car damages dataset\File1\ann\Car damages 1075.png.json
+   Car damages dataset\File1\ann\Car damages 1076.png.json
+   Car damages dataset\File1\ann\Car damages 1077.png.json
+   Car damages dataset\File1\ann\Car damages 1078.png.json
+   Car damages dataset\File1\ann\Car damages 1079.jpg.json
+   Car damages dataset\File1\ann\Car damages 108.png.json
+   Car damages dataset\File1\ann\Car damages 1080.png.json
+   Car damages dataset\File1\ann\Car damages 1081.png.json
+   Car damages dataset\File1\ann\Car damages 1082.png.json
+   Car damages dataset\File1\ann\Car damages 1083.png.json
+   Car damages dataset\File1\ann\Car damages 1084.png.json
+   Car damages dataset\File1\ann\Car damages 1085.png.json
+   Car damages dataset\File1\ann\Car damages 1086.png.json
+   Car damages dataset\File1\ann\Car damages 1087.png.json
+   Car damages dataset\File1\ann\Car damages 1088.png.json
+   Car damages dataset\File1\ann\Car damages 1089.png.json
+   Car damages dataset\File1\ann\Car damages 109.png.json
+   Car damages dataset\File1\ann\Car damages 1090.png.json
+   Car damages dataset\File1\ann\Car damages 1091.jpg.json
+   Car damages dataset\File1\ann\Car damages 1092.png.json
+   Car damages dataset\File1\ann\Car damages 1093.png.json
+   Car damages dataset\File1\ann\Car damages 1094.png.json
+   Car damages dataset\File1\ann\Car damages 1095.png.json
+   Car damages dataset\File1\ann\Car damages 1096.png.json
+   Car damages dataset\File1\ann\Car damages 1097.png.json
+   Car damages dataset\File1\ann\Car damages 1098.png.json
+   Car damages dataset\File1\ann\Car damages 1099.png.json
+   Car damages dataset\File1\ann\Car damages 11.png.json
+   Car damages dataset\File1\ann\Car damages 110.png.json
+   Car damages dataset\File1\ann\Car damages 1100.png.json
+   Car damages dataset\File1\ann\Car damages 1101.png.json
+   Car damages dataset\File1\ann\Car damages 1102.png.json
+   Car damages dataset\File1\ann\Car damages 1103.jpg.json
+   Car damages dataset\File1\ann\Car damages 1104.png.json
+   Car damages dataset\File1\ann\Car damages 1105.png.json
+   Car damages dataset\File1\ann\Car damages 1106.png.json
+   Car damages dataset\File1\ann\Car damages 1107.png.json
+   Car damages dataset\File1\ann\Car damages 1108.png.json
+   Car damages dataset\File1\ann\Car damages 1109.png.json
+   Car damages dataset\File1\ann\Car damages 111.png.json
+   Car damages dataset\File1\ann\Car damages 1110.png.json
+   Car damages dataset\File1\ann\Car damages 1111.png.json
+   Car damages dataset\File1\ann\Car damages 1112.png.json
+   Car damages dataset\File1\ann\Car damages 1113.png.json
+   Car damages dataset\File1\ann\Car damages 1114.png.json
+   Car damages dataset\File1\ann\Car damages 1115.jpg.json
+   Car damages dataset\File1\ann\Car damages 1116.png.json
+   Car damages dataset\File1\ann\Car damages 1117.png.json
+   Car damages dataset\File1\ann\Car damages 1118.png.json
+   Car damages dataset\File1\ann\Car damages 1119.png.json
+   Car damages dataset\File1\ann\Car damages 112.png.json
+   Car damages dataset\File1\ann\Car damages 1120.png.json
+   Car damages dataset\File1\ann\Car damages 1121.png.json
+   Car damages dataset\File1\ann\Car damages 1122.png.json
+   Car damages dataset\File1\ann\Car damages 1123.png.json
+   Car damages dataset\File1\ann\Car damages 1124.png.json
+   Car damages dataset\File1\ann\Car damages 1125.png.json
+   Car damages dataset\File1\ann\Car damages 1126.png.json
+   Car damages dataset\File1\ann\Car damages 1127.jpg.json
+   Car damages dataset\File1\ann\Car damages 1128.png.json
+   Car damages dataset\File1\ann\Car damages 1129.png.json
+   Car damages dataset\File1\ann\Car damages 113.png.json
+   Car damages dataset\File1\ann\Car damages 1130.png.json
+   Car damages dataset\File1\ann\Car damages 1131.png.json
+   Car damages dataset\File1\ann\Car damages 1132.png.json
+   Car damages dataset\File1\ann\Car damages 1133.png.json
+   Car damages dataset\File1\ann\Car damages 1134.png.json
+   Car damages dataset\File1\ann\Car damages 1135.png.json
+   Car damages dataset\File1\ann\Car damages 1136.png.json
+   Car damages dataset\File1\ann\Car damages 1137.png.json
+   Car damages dataset\File1\ann\Car damages 1138.png.json
+   Car damages dataset\File1\ann\Car damages 114.jpg.json
+   Car damages dataset\File1\ann\Car damages 1140.jpg.json
+   Car damages dataset\File1\ann\Car damages 1141.png.json
+   Car damages dataset\File1\ann\Car damages 1143.jpg.json
+   Car damages dataset\File1\ann\Car damages 1144.png.json
+   Car damages dataset\File1\ann\Car damages 1145.jpg.json
+   Car damages dataset\File1\ann\Car damages 1146.png.json
+   Car damages dataset\File1\ann\Car damages 1147.png.json
+   Car damages dataset\File1\ann\Car damages 1148.png.json
+   Car damages dataset\File1\ann\Car damages 1149.png.json
+   Car damages dataset\File1\ann\Car damages 115.png.json
+   Car damages dataset\File1\ann\Car damages 1150.png.json
+   Car damages dataset\File1\ann\Car damages 1151.png.json
+   Car damages dataset\File1\ann\Car damages 1152.png.json
+   Car damages dataset\File1\ann\Car damages 1153.png.json
+   Car damages dataset\File1\ann\Car damages 1154.png.json
+   Car damages dataset\File1\ann\Car damages 1155.png.json
+   Car damages dataset\File1\ann\Car damages 1156.png.json
+   Car damages dataset\File1\ann\Car damages 1157.jpg.json
+   Car damages dataset\File1\ann\Car damages 1158.png.json
+   Car damages dataset\File1\ann\Car damages 1159.png.json
+   Car damages dataset\File1\ann\Car damages 116.png.json
+   Car damages dataset\File1\ann\Car damages 1160.png.json
+   Car damages dataset\File1\ann\Car damages 1161.png.json
+   Car damages dataset\File1\ann\Car damages 1162.png.json
+   Car damages dataset\File1\ann\Car damages 1163.png.json
+   Car damages dataset\File1\ann\Car damages 1164.png.json
+   Car damages dataset\File1\ann\Car damages 1165.png.json
+   Car damages dataset\File1\ann\Car damages 1166.png.json
+   Car damages dataset\File1\ann\Car damages 1167.png.json
+   Car damages dataset\File1\ann\Car damages 1168.png.json
+   Car damages dataset\File1\ann\Car damages 1169.jpg.json
+   Car damages dataset\File1\ann\Car damages 117.png.json
+   Car damages dataset\File1\ann\Car damages 1170.png.json
+   Car damages dataset\File1\ann\Car damages 1171.png.json
+   Car damages dataset\File1\ann\Car damages 1172.png.json
+   Car damages dataset\File1\ann\Car damages 1173.png.json
+   Car damages dataset\File1\ann\Car damages 1174.png.json
+   Car damages dataset\File1\ann\Car damages 1175.png.json
+   Car damages dataset\File1\ann\Car damages 1176.png.json
+   Car damages dataset\File1\ann\Car damages 1177.png.json
+   Car damages dataset\File1\ann\Car damages 1178.png.json
+   Car damages dataset\File1\ann\Car damages 1179.png.json
+   Car damages dataset\File1\ann\Car damages 118.png.json
+   Car damages dataset\File1\ann\Car damages 1180.png.json
+   Car damages dataset\File1\ann\Car damages 1181.jpg.json
+   Car damages dataset\File1\ann\Car damages 1182.png.json
+   Car damages dataset\File1\ann\Car damages 119.png.json
+   Car damages dataset\File1\ann\Car damages 12.png.json
+   Car damages dataset\File1\ann\Car damages 120.png.json
+   Car damages dataset\File1\ann\Car damages 121.png.json
+   Car damages dataset\File1\ann\Car damages 122.png.json
+   Car damages dataset\File1\ann\Car damages 123.png.json
+   Car damages dataset\File1\ann\Car damages 124.png.json
+   Car damages dataset\File1\ann\Car damages 125.png.json
+   Car damages dataset\File1\ann\Car damages 127.jpg.json
+   Car damages dataset\File1\ann\Car damages 1271.png.json
+   Car damages dataset\File1\ann\Car damages 1272.png.json
+   Car damages dataset\File1\ann\Car damages 1273.png.json
+   Car damages dataset\File1\ann\Car damages 1274.png.json
+   Car damages dataset\File1\ann\Car damages 1275.png.json
+   Car damages dataset\File1\ann\Car damages 1276.png.json
+   Car damages dataset\File1\ann\Car damages 1277.png.json
+   Car damages dataset\File1\ann\Car damages 1278.png.json
+
+*.py:
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\_distutils_hack\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\_distutils_hack\override.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\_yaml\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\annotated_doc\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\annotated_doc\main.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\annotated_types\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\annotated_types\test_cases.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_backends\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_backends\_asyncio.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_backends\_trio.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_asyncio_selector_thread.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_concurrency_utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_contextmanagers.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_eventloop.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_exceptions.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_fileio.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_futures.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_resources.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_signals.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_sockets.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_streams.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_subprocesses.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_synchronization.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_tasks.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_tempfile.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_testing.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_core\_typedattr.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\_lazyimport.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\_eventloop.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\_resources.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\_sockets.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\_streams.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\_subprocesses.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\_tasks.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\abc\_testing.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\from_thread.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\functools.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\itertools.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\lowlevel.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\pytest_plugin.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\streams\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\streams\buffered.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\streams\file.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\streams\memory.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\streams\stapled.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\streams\text.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\streams\tls.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\to_interpreter.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\to_process.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\anyio\to_thread.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\_compat.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\_termui_impl.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\_textwrap.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\_utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\_winconsole.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\core.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\decorators.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\exceptions.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\formatting.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\globals.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\parser.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\shell_completion.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\termui.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\testing.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\types.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\click\utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\cloudpickle\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\cloudpickle\cloudpickle.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\cloudpickle\cloudpickle_fast.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\_common.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\_version.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\easter.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\parser\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\parser\_parser.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\parser\isoparser.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\relativedelta.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\rrule.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\tz\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\tz\_common.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\tz\_factories.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\tz\tz.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\tz\win.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\tzwin.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\zoneinfo\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dateutil\zoneinfo\rebuild.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\__main__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\cli.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\ipython.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\main.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\parser.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\variables.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\dotenv\version.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\__main__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\_compat\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\_compat\shared.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\_compat\v2.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\applications.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\background.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\cli.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\concurrency.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\datastructures.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\dependencies\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\dependencies\models.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\dependencies\utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\encoders.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\exception_handlers.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\exceptions.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\logger.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\middleware\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\middleware\asyncexitstack.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\middleware\cors.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\middleware\gzip.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\middleware\httpsredirect.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\middleware\trustedhost.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\middleware\wsgi.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\openapi\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\openapi\constants.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\openapi\docs.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\openapi\models.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\openapi\utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\param_functions.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\params.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\requests.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\responses.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\routing.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\security\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\security\api_key.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\security\base.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\security\http.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\security\oauth2.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\security\open_id_connect_url.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\security\utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\sse.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\staticfiles.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\telemetry\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\telemetry\_api.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\telemetry\_asgi.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\telemetry\_runtime.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\templating.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\testclient.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\types.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\utils.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fastapi\websockets.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_api.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_async.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_async_read_write.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_descriptor.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_error.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_identity.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_lease.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_marker.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_read_write.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_soft.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_soft_protocol.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_soft_rw\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_soft_rw\_async.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_soft_rw\_protocol.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_soft_rw\_storage.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_soft_rw\_sync.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_strict.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_unix.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_util.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\_windows.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\asyncio.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\filelock\version.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\_version.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\archive.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\asyn.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\caching.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\callbacks.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\compression.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\config.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\conftest.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\core.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\dircache.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\exceptions.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\fuse.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\generic.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\gui.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\__init__.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\arrow.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\asyn_wrapper.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\cache_mapper.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\cache_metadata.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\cached.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\chained.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\dask.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\data.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\dbfs.py
+   AI-Vehicle-Damage-Assessment-Final\.venv\Lib\site-packages\fsspec\implementations\dirfs.py
+
+*.ipynb:
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\verify_models.py
+[OK] classification_model: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\classification_model\best_efficientnet_b0.pth
+[OK] binary_model: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\binary_classification_model\best_binary_efficientnet_b0.pth
+[FAIL] segmentation_model: Error(s) in loading state_dict for UNetResNet18:
+        Missing key(s) in state_dict: "conv1.weight", "bn1.weight", "bn1.bias", "bn1.running_mean", "bn1.running_var", "layer1.0.conv1.weight", "layer1.0.bn1.weight", "layer1.0.bn1.bias", "layer1.0.bn1.running_mean", "layer1.0.bn1.running_var", "layer1.0.conv2.weight", "layer1.0.bn2.weight", "layer1.0.bn2.bias", "layer1.0.bn2.running_mean", "layer1.0.bn2.running_var", "layer1.1.conv1.weight", "layer1.1.bn1.weight", "layer1.1.bn1.bias", "layer1.1.bn1.running_mean", "layer1.1.bn1.running_var", "layer1.1.conv2.weight", "layer1.1.bn2.weight", "layer1.1.bn2.bias", "layer1.1.bn2.running_mean", "layer1.1.bn2.running_var", "layer2.0.conv1.weight", "layer2.0.bn1.weight", "layer2.0.bn1.bias", "layer2.0.bn1.running_mean", "layer2.0.bn1.running_var", "layer2.0.conv2.weight", "layer2.0.bn2.weight", "layer2.0.bn2.bias", "layer2.0.bn2.running_mean", "layer2.0.bn2.running_var", "layer2.0.downsample.0.weight", "layer2.0.downsample.1.weight", "layer2.0.downsample.1.bias", "layer2.0.downsample.1.running_mean", "layer2.0.downsample.1.running_var", "layer2.1.conv1.weight", "layer2.1.bn1.weight", "layer2.1.bn1.bias", "layer2.1.bn1.running_mean", "layer2.1.bn1.running_var", "layer2.1.conv2.weight", "layer2.1.bn2.weight", "layer2.1.bn2.bias", "layer2.1.bn2.running_mean", "layer2.1.bn2.running_var", "layer3.0.conv1.weight", "layer3.0.bn1.weight", "layer3.0.bn1.bias", "layer3.0.bn1.running_mean", "layer3.0.bn1.running_var", "layer3.0.conv2.weight", "layer3.0.b
+  -> Paste your notebook U-Net class into backend/unet_model.py (class name UNetResNet18).
+[MISSING] ai_detector_model: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\ai_generated_detector\model\best_ai_detector.pth
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\train_ai_detector.py --max_per_group 300 --epochs 3
+folder Dalle: 252 images
+folder Kandinsky: 999 images
+folder Midjourney: 1160 images
+folder SDXL: 999 images
+folder UnCLIP: 2816 images
+Real images from D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image: 1512
+split  generator
+test   Dalle          38
+       Kandinsky      45
+       Midjourney     45
+       SDXL           45
+       UnCLIP         45
+       real           45
+train  Dalle         176
+       Kandinsky     210
+       Midjourney    210
+       SDXL          210
+       UnCLIP        210
+       real          210
+val    Dalle          38
+       Kandinsky      45
+       Midjourney     45
+       SDXL           45
+       UnCLIP         45
+       real           45
+dtype: int64
+[INFO] Device: cpu
+Downloading: "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth" to C:\Users\LOQ/.cache\torch\hub\checkpoints\efficientnet_b0_rwightman-7f5810bc.pth
+100.0%
+epoch 1: val AUC 0.9995
+epoch 2: val AUC 1.0000
+epoch 3: val AUC 1.0000
+AI thresholds from validation: low=0.57 high=0.57
+Now run: python scripts/evaluate_ai_detector.py
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\train_ai_detector.py
+folder Dalle: 252 images
+folder Kandinsky: 999 images
+folder Midjourney: 1160 images
+folder SDXL: 999 images
+folder UnCLIP: 2816 images
+Real images from D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image: 1512
+split  generator
+test   Dalle           38
+       Kandinsky      150
+       Midjourney     174
+       SDXL           150
+       UnCLIP         423
+       real           227
+train  Dalle          176
+       Kandinsky      699
+       Midjourney     812
+       SDXL           699
+       UnCLIP        1971
+       real          1058
+val    Dalle           38
+       Kandinsky      150
+       Midjourney     174
+       SDXL           150
+       UnCLIP         422
+       real           227
+dtype: int64
+[INFO] Device: cpu
+epoch 1: val AUC 1.0000
+epoch 2: val AUC 1.0000
+epoch 3: val AUC 1.0000
+epoch 4: val AUC 1.0000
+epoch 5: val AUC 1.0000
+epoch 6: val AUC 1.0000
+epoch 7: val AUC 1.0000
+epoch 8: val AUC 1.0000
+AI thresholds from validation: low=0.53 high=0.53
+Now run: python scripts/evaluate_ai_detector.py
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\evaluate_ai_detector.py
+{
+  "overall_threshold_0.5": {
+    "TP": 935,
+    "TN": 226,
+    "FP": 1,
+    "FN": 0,
+    "accuracy": 0.9991,
+    "precision": 0.9989,
+    "recall": 1.0,
+    "f1": 0.9995,
+    "false_positive_rate": 0.0044,
+    "false_negative_rate": 0.0,
+    "roc_auc": 1.0
+  },
+  "overall_v2_band_uncertain_as_not_flagged": {
+    "TP": 935,
+    "TN": 227,
+    "FP": 0,
+    "FN": 0,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0,
+    "roc_auc": 1.0
+  },
+  "uncertain_count": 0,
+  "n_test": 1162,
+  "per_generator": {
+    "Dalle": {
+      "n": 38,
+      "detection_rate_at_0.5": 1.0
+    },
+    "Kandinsky": {
+      "n": 150,
+      "detection_rate_at_0.5": 1.0
+    },
+    "Midjourney": {
+      "n": 174,
+      "detection_rate_at_0.5": 1.0
+    },
+    "SDXL": {
+      "n": 150,
+      "detection_rate_at_0.5": 1.0
+    },
+    "UnCLIP": {
+      "n": 423,
+      "detection_rate_at_0.5": 1.0
+    }
+  }
+}
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python -c "import pandas as pd; d=pd.read_csv(r'D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\binary_classification_dataset\splits\validation.csv'); print(d.columns.tolist()); print(d.head(3).to_string())"
+['image', 'classes', 'label', 'binary_class', 'binary_name']
+             image       classes  label  binary_class binary_name
+0  image/1318.jpeg   bumper_dent      0             1      Damage
+1   image/495.jpeg       unknown      7             0   No Damage
+2   image/219.jpeg  door_scratch      3             1      Damage
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python -c "import torch; sd=torch.load(r'D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\segmentation_model\best_unet_resnet18.pth',map_location='cpu',weights_only=False); sd=sd.get('model_state_dict',sd) if isinstance(sd,dict) else sd; ks=list(sd.keys()); print(len(ks)); print([ (k,tuple(sd[k].shape)) for k in ks if 'layer' not in k])"
+180
+[('enc1.0.weight', (64, 3, 7, 7)), ('enc1.1.weight', (64,)), ('enc1.1.bias', (64,)), ('enc1.1.running_mean', (64,)), ('enc1.1.running_var', (64,)), ('enc1.1.num_batches_tracked', ()), ('enc2.0.conv1.weight', (64, 64, 3, 3)), ('enc2.0.bn1.weight', (64,)), ('enc2.0.bn1.bias', (64,)), ('enc2.0.bn1.running_mean', (64,)), ('enc2.0.bn1.running_var', (64,)), ('enc2.0.bn1.num_batches_tracked', ()), ('enc2.0.conv2.weight', (64, 64, 3, 3)), ('enc2.0.bn2.weight', (64,)), ('enc2.0.bn2.bias', (64,)), ('enc2.0.bn2.running_mean', (64,)), ('enc2.0.bn2.running_var', (64,)), ('enc2.0.bn2.num_batches_tracked', ()), ('enc2.1.conv1.weight', (64, 64, 3, 3)), ('enc2.1.bn1.weight', (64,)), ('enc2.1.bn1.bias', (64,)), ('enc2.1.bn1.running_mean', (64,)), ('enc2.1.bn1.running_var', (64,)), ('enc2.1.bn1.num_batches_tracked', ()), ('enc2.1.conv2.weight', (64, 64, 3, 3)), ('enc2.1.bn2.weight', (64,)), ('enc2.1.bn2.bias', (64,)), ('enc2.1.bn2.running_mean', (64,)), ('enc2.1.bn2.running_var', (64,)), ('enc2.1.bn2.num_batches_tracked', ()), ('enc3.0.conv1.weight', (128, 64, 3, 3)), ('enc3.0.bn1.weight', (128,)), ('enc3.0.bn1.bias', (128,)), ('enc3.0.bn1.running_mean', (128,)), ('enc3.0.bn1.running_var', (128,)), ('enc3.0.bn1.num_batches_tracked', ()), ('enc3.0.conv2.weight', (128, 128, 3, 3)), ('enc3.0.bn2.weight', (128,)), ('enc3.0.bn2.bias', (128,)), ('enc3.0.bn2.running_mean', (128,)), ('enc3.0.bn2.running_var', (128,)), ('enc3.0.bn2.num_batches_tracked', ()), ('enc3.0.downsample.0.weight', (128, 64, 1, 1)), ('enc3.0.downsample.1.weight', (128,)), ('enc3.0.downsample.1.bias', (128,)), ('enc3.0.downsample.1.running_mean', (128,)), ('enc3.0.downsample.1.running_var', (128,)), ('enc3.0.downsample.1.num_batches_tracked', ()), ('enc3.1.conv1.weight', (128, 128, 3, 3)), ('enc3.1.bn1.weight', (128,)), ('enc3.1.bn1.bias', (128,)), ('enc3.1.bn1.running_mean', (128,)), ('enc3.1.bn1.running_var', (128,)), ('enc3.1.bn1.num_batches_tracked', ()), ('enc3.1.conv2.weight', (128, 128, 3, 3)), ('enc3.1.bn2.weight', (128,)), ('enc3.1.bn2.bias', (128,)), ('enc3.1.bn2.running_mean', (128,)), ('enc3.1.bn2.running_var', (128,)), ('enc3.1.bn2.num_batches_tracked', ()), ('enc4.0.conv1.weight', (256, 128, 3, 3)), ('enc4.0.bn1.weight', (256,)), ('enc4.0.bn1.bias', (256,)), ('enc4.0.bn1.running_mean', (256,)), ('enc4.0.bn1.running_var', (256,)), ('enc4.0.bn1.num_batches_tracked', ()), ('enc4.0.conv2.weight', (256, 256, 3, 3)), ('enc4.0.bn2.weight', (256,)), ('enc4.0.bn2.bias', (256,)), ('enc4.0.bn2.running_mean', (256,)), ('enc4.0.bn2.running_var', (256,)), ('enc4.0.bn2.num_batches_tracked', ()), ('enc4.0.downsample.0.weight', (256, 128, 1, 1)), ('enc4.0.downsample.1.weight', (256,)), ('enc4.0.downsample.1.bias', (256,)), ('enc4.0.downsample.1.running_mean', (256,)), ('enc4.0.downsample.1.running_var', (256,)), ('enc4.0.downsample.1.num_batches_tracked', ()), ('enc4.1.conv1.weight', (256, 256, 3, 3)), ('enc4.1.bn1.weight', (256,)), ('enc4.1.bn1.bias', (256,)), ('enc4.1.bn1.running_mean', (256,)), ('enc4.1.bn1.running_var', (256,)), ('enc4.1.bn1.num_batches_tracked', ()), ('enc4.1.conv2.weight', (256, 256, 3, 3)), ('enc4.1.bn2.weight', (256,)), ('enc4.1.bn2.bias', (256,)), ('enc4.1.bn2.running_mean', (256,)), ('enc4.1.bn2.running_var', (256,)), ('enc4.1.bn2.num_batches_tracked', ()), ('enc5.0.conv1.weight', (512, 256, 3, 3)), ('enc5.0.bn1.weight', (512,)), ('enc5.0.bn1.bias', (512,)), ('enc5.0.bn1.running_mean', (512,)), ('enc5.0.bn1.running_var', (512,)), ('enc5.0.bn1.num_batches_tracked', ()), ('enc5.0.conv2.weight', (512, 512, 3, 3)), ('enc5.0.bn2.weight', (512,)), ('enc5.0.bn2.bias', (512,)), ('enc5.0.bn2.running_mean', (512,)), ('enc5.0.bn2.running_var', (512,)), ('enc5.0.bn2.num_batches_tracked', ()), ('enc5.0.downsample.0.weight', (512, 256, 1, 1)), ('enc5.0.downsample.1.weight', (512,)), ('enc5.0.downsample.1.bias', (512,)), ('enc5.0.downsample.1.running_mean', (512,)), ('enc5.0.downsample.1.running_var', (512,)), ('enc5.0.downsample.1.num_batches_tracked', ()), ('enc5.1.conv1.weight', (512, 512, 3, 3)), ('enc5.1.bn1.weight', (512,)), ('enc5.1.bn1.bias', (512,)), ('enc5.1.bn1.running_mean', (512,)), ('enc5.1.bn1.running_var', (512,)), ('enc5.1.bn1.num_batches_tracked', ()), ('enc5.1.conv2.weight', (512, 512, 3, 3)), ('enc5.1.bn2.weight', (512,)), ('enc5.1.bn2.bias', (512,)), ('enc5.1.bn2.running_mean', (512,)), ('enc5.1.bn2.running_var', (512,)), ('enc5.1.bn2.num_batches_tracked', ()), ('up4.weight', (512, 256, 2, 2)), ('up4.bias', (256,)), ('dec4.block.0.weight', (256, 512, 3, 3)), ('dec4.block.1.weight', (256,)), ('dec4.block.1.bias', (256,)), ('dec4.block.1.running_mean', (256,)), ('dec4.block.1.running_var', (256,)), ('dec4.block.1.num_batches_tracked', ()), ('dec4.block.3.weight', (256, 256, 3, 3)), ('dec4.block.4.weight', (256,)), ('dec4.block.4.bias', (256,)), ('dec4.block.4.running_mean', (256,)), ('dec4.block.4.running_var', (256,)), ('dec4.block.4.num_batches_tracked', ()), ('up3.weight', (256, 128, 2, 2)), ('up3.bias', (128,)), ('dec3.block.0.weight', (128, 256, 3, 3)), ('dec3.block.1.weight', (128,)), ('dec3.block.1.bias', (128,)), ('dec3.block.1.running_mean', (128,)), ('dec3.block.1.running_var', (128,)), ('dec3.block.1.num_batches_tracked', ()), ('dec3.block.3.weight', (128, 128, 3, 3)), ('dec3.block.4.weight', (128,)), ('dec3.block.4.bias', (128,)), ('dec3.block.4.running_mean', (128,)), ('dec3.block.4.running_var', (128,)), ('dec3.block.4.num_batches_tracked', ()), ('up2.weight', (128, 64, 2, 2)), ('up2.bias', (64,)), ('dec2.block.0.weight', (64, 128, 3, 3)), ('dec2.block.1.weight', (64,)), ('dec2.block.1.bias', (64,)), ('dec2.block.1.running_mean', (64,)), ('dec2.block.1.running_var', (64,)), ('dec2.block.1.num_batches_tracked', ()), ('dec2.block.3.weight', (64, 64, 3, 3)), ('dec2.block.4.weight', (64,)), ('dec2.block.4.bias', (64,)), ('dec2.block.4.running_mean', (64,)), ('dec2.block.4.running_var', (64,)), ('dec2.block.4.num_batches_tracked', ()), ('up1.weight', (64, 64, 2, 2)), ('up1.bias', (64,)), ('dec1.block.0.weight', (64, 128, 3, 3)), ('dec1.block.1.weight', (64,)), ('dec1.block.1.bias', (64,)), ('dec1.block.1.running_mean', (64,)), ('dec1.block.1.running_var', (64,)), ('dec1.block.1.num_batches_tracked', ()), ('dec1.block.3.weight', (64, 64, 3, 3)), ('dec1.block.4.weight', (64,)), ('dec1.block.4.bias', (64,)), ('dec1.block.4.running_mean', (64,)), ('dec1.block.4.running_var', (64,)), ('dec1.block.4.num_batches_tracked', ()), ('final_up.weight', (64, 32, 2, 2)), ('final_up.bias', (32,)), ('final_conv.weight', (1, 32, 1, 1)), ('final_conv.bias', (1,))]
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\verify_models.py
+[OK] classification_model: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\classification_model\best_efficientnet_b0.pth
+[OK] binary_model: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\binary_classification_model\best_binary_efficientnet_b0.pth
+[OK] segmentation_model: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\segmentation_model\best_unet_resnet18.pth
+[OK] ai_detector_model: D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\ai_generated_detector\model\best_ai_detector.pth
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\calibrate_gate.py --val_csv "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\binary_classification_dataset\splits\validation.csv" --images_root "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL" --path_col image --label_col binary_class
+[INFO] Device: CPU
+[WARN] damage_thresholds not calibrated - using single 0.5 cut.
+[INFO] Models loaded
+Baseline @0.5 (validation): {'TP': 136, 'TN': 78, 'FP': 4, 'FN': 9, 'accuracy': np.float64(0.9427), 'precision': np.float64(0.9714), 'recall': np.float64(0.9379), 'f1': np.float64(0.9544), 'false_positive_rate': np.float64(0.0488), 'false_negative_rate': np.float64(0.0621), 'roc_auc': 0.979}
+Selected from validation: low=0.33 high=0.33
+Written to config.yaml. Evaluate on test data with scripts/evaluate_false_positives.py
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\test_internal_21.py
+[INFO] Device: CPU
+[INFO] Models loaded
+21 images -> D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\final_pipeline_v2\internal_21_results.csv
+Gate agrees with ground truth (unknown=no damage) on 0/21
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python -c "import pandas as pd; pd.set_option('display.width',250); print(pd.read_csv(r'D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\final_pipeline_v2\internal_21_results.csv').iloc[:, :8].to_string())"
+                           image  ground_truth authenticity_status  authenticity_confidence  damage_status  damage_confidence  predicted_damage_type  classification_confidence
+0    internal_test_01_ID_165.jpg           NaN        AI_GENERATED                    99.63            NaN                NaN                    NaN                        NaN
+1    internal_test_02_ID_234.png           NaN        AI_GENERATED                    99.46            NaN                NaN                    NaN                        NaN
+2    internal_test_03_ID_256.png           NaN        AI_GENERATED                    99.75            NaN                NaN                    NaN                        NaN
+3    internal_test_04_ID_494.png           NaN        AI_GENERATED                    96.99            NaN                NaN                    NaN                        NaN
+4    internal_test_05_ID_495.png           NaN        AI_GENERATED                    98.31            NaN                NaN                    NaN                        NaN
+5    internal_test_06_ID_501.jpg           NaN        AI_GENERATED                    94.91            NaN                NaN                    NaN                        NaN
+6    internal_test_07_ID_630.png           NaN        AI_GENERATED                    98.32            NaN                NaN                    NaN                        NaN
+7    internal_test_08_ID_714.png           NaN        AI_GENERATED                    97.23            NaN                NaN                    NaN                        NaN
+8    internal_test_09_ID_760.png           NaN        AI_GENERATED                    84.68            NaN                NaN                    NaN                        NaN
+9    internal_test_10_ID_778.png           NaN        AI_GENERATED                    96.73            NaN                NaN                    NaN                        NaN
+10   internal_test_11_ID_784.png           NaN        AI_GENERATED                    98.47            NaN                NaN                    NaN                        NaN
+11   internal_test_12_ID_867.png           NaN        AI_GENERATED                    95.86            NaN                NaN                    NaN                        NaN
+12   internal_test_13_ID_935.png           NaN        AI_GENERATED                    99.13            NaN                NaN                    NaN                        NaN
+13   internal_test_14_ID_992.jpg           NaN        AI_GENERATED                    96.87            NaN                NaN                    NaN                        NaN
+14  internal_test_15_ID_1168.png           NaN        AI_GENERATED                    99.44            NaN                NaN                    NaN                        NaN
+15  internal_test_16_ID_1170.png           NaN        AI_GENERATED                    98.91            NaN                NaN                    NaN                        NaN
+16  internal_test_17_ID_1172.png           NaN        AI_GENERATED                    99.70            NaN                NaN                    NaN                        NaN
+17  internal_test_18_ID_1209.png           NaN        AI_GENERATED                    99.06            NaN                NaN                    NaN                        NaN
+18  internal_test_19_ID_1245.png           NaN        AI_GENERATED                    88.69            NaN                NaN                    NaN                        NaN
+19  internal_test_20_ID_1282.png           NaN        AI_GENERATED                    97.65            NaN                NaN                    NaN                        NaN
+20  internal_test_21_ID_1292.jpg           NaN        AI_GENERATED                    98.60            NaN                NaN                    NaN                        NaN
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>cd /d "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final"
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>.venv\Scripts\activatepython scripts\diagnose_image.py "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\165.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\internal_test_images\classification_segmentation_overlap\internal_test_01_ID_165.jpg"
+'.venv\Scripts\activatepython' is not recognized as an internal or external command,
+operable program or batch file.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>set SKIP_AI=1
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\test_internal_21.py
+[INFO] Device: CPU
+[WARN] AI authenticity check is OFF (model missing or SKIP_AI set).
+[INFO] Models loaded
+21 images -> D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\final_pipeline_v2\internal_21_results.csv
+Gate agrees with ground truth (unknown=no damage) on 6/21
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python -c "import pandas as pd; pd.set_option('display.width',250); print(pd.read_csv(r'D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\final_pipeline_v2\internal_21_results.csv').to_string())"
+                           image    ground_truth authenticity_status  authenticity_confidence          damage_status  damage_confidence  predicted_damage_type  classification_confidence  damage_area  severity  assessment_score  assessment_category  insurance_status
+0    internal_test_01_ID_165.jpg   glass_shatter       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.97                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+1    internal_test_02_ID_234.png     bumper_dent       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              91.38                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+2    internal_test_03_ID_256.png   glass_shatter       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              97.26                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+3    internal_test_04_ID_494.png       door_dent       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.91                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+4    internal_test_05_ID_495.png         unknown       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              78.35                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+5    internal_test_06_ID_501.jpg    door_scratch       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.58                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+6    internal_test_07_ID_630.png    door_scratch       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              90.76                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+7    internal_test_08_ID_714.png  bumper_scratch       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              97.99                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+8    internal_test_09_ID_760.png       tail_lamp       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              98.85                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+9    internal_test_10_ID_778.png       head_lamp       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.46                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+10   internal_test_11_ID_784.png  bumper_scratch       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.57                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+11   internal_test_12_ID_867.png   glass_shatter       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.45                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+12   internal_test_13_ID_935.png         unknown       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              98.78                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+13   internal_test_14_ID_992.jpg         unknown       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              98.90                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+14  internal_test_15_ID_1168.png         unknown       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.91                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+15  internal_test_16_ID_1170.png         unknown       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.43                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+16  internal_test_17_ID_1172.png   glass_shatter       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              98.74                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+17  internal_test_18_ID_1209.png     bumper_dent       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              82.82                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+18  internal_test_19_ID_1245.png       door_dent       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              98.97                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+19  internal_test_20_ID_1282.png         unknown       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.80                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+20  internal_test_21_ID_1292.jpg       head_lamp       NOT_AVAILABLE                      NaN  NO_SIGNIFICANT_DAMAGE              99.98                    NaN                        NaN          NaN       NaN               NaN                  NaN               NaN
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>dir "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\165.*"
+ Volume in drive D is New Volume
+ Volume Serial Number is 06DA-DF55
+
+ Directory of D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image
+
+27-09-2026  23:08            13,041 165.jpeg
+               1 File(s)         13,041 bytes
+               0 Dir(s)  201,710,944,256 bytes free
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\diagnose_image.py "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\165.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\internal_test_images\classification_segmentation_overlap\internal_test_01_ID_165.jpg"
+[INFO] Device: CPU
+[WARN] AI authenticity check is OFF (model missing or SKIP_AI set).
+[INFO] Models loaded
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\165.jpeg
+  format=JPEG size=(224, 224) mode=RGB bytes=13041 p_ai=n/a p_damage=0.9731
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\internal_test_images\classification_segmentation_overlap\internal_test_01_ID_165.jpg
+  format=JPEG size=(630, 474) mode=RGB bytes=56444 p_ai=n/a p_damage=0.0003
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>set SKIP_AI=
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\preproc_experiment.py "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\internal_test_images\classification_segmentation_overlap\internal_test_01_ID_165.jpg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\internal_test_images\classification_segmentation_overlap\internal_test_04_ID_494.png" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\internal_test_images\classification_segmentation_overlap\internal_test_05_ID_495.png"
+[INFO] Device: CPU
+[INFO] Models loaded
+
+internal_test_01_ID_165.jpg size=(630, 474) jpeg_quant_first=8
+  as-is          p_damage=0.0003 p_ai=0.9963
+  224 squash     p_damage=0.0003 p_ai=0.9963
+  224 + JPEG q95 p_damage=0.0001 p_ai=0.9924
+  224 + JPEG q85 p_damage=0.0001 p_ai=0.5946
+  224 + JPEG q75 p_damage=0.0001 p_ai=0.0234
+  224 + JPEG q60 p_damage=0.0001 p_ai=0.0042
+
+internal_test_04_ID_494.png size=(512, 369) jpeg_quant_first=n/a
+  as-is          p_damage=0.0009 p_ai=0.9699
+  224 squash     p_damage=0.0009 p_ai=0.9699
+  224 + JPEG q95 p_damage=0.0014 p_ai=0.8024
+  224 + JPEG q85 p_damage=0.0008 p_ai=0.0351
+  224 + JPEG q75 p_damage=0.0013 p_ai=0.0283
+  224 + JPEG q60 p_damage=0.0010 p_ai=0.0155
+
+internal_test_05_ID_495.png size=(512, 425) jpeg_quant_first=n/a
+  as-is          p_damage=0.2165 p_ai=0.9831
+  224 squash     p_damage=0.2165 p_ai=0.9831
+  224 + JPEG q95 p_damage=0.2425 p_ai=0.9585
+  224 + JPEG q85 p_damage=0.2056 p_ai=0.2635
+  224 + JPEG q75 p_damage=0.1833 p_ai=0.1109
+  224 + JPEG q60 p_damage=0.1592 p_ai=0.0330
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>mkdir "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21"
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>for %i in (165 234 256 494 495 501 630 714 760 778 784 867 935 992 1168 1170 1172 1209 1245 1282 1292) do copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\%i.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\165.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\234.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\256.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\494.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\495.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\501.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\630.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\714.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\760.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\778.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\784.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\867.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\935.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\992.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\1168.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\1170.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\1172.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\1209.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\1245.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\1282.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>copy "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image\1292.jpeg" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21\"
+        1 file(s) copied.
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>set SKIP_AI=1
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\test_external_images.py "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\tmp21"
+[INFO] Device: CPU
+[WARN] AI authenticity check is OFF (model missing or SKIP_AI set).
+[INFO] Models loaded
+['1168.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 82.77, 'bumper_scratch', 69.63, 0.7187, 'Low', 28.28, 'Moderate Assessment', 'Insurance Eligible']
+['1170.jpeg', 'NOT_AVAILABLE', None, 'NO_SIGNIFICANT_DAMAGE', 96.77, None, None, None, None, None, None, None]
+['1172.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.95, 'glass_shatter', 64.86, 13.3865, 'Moderate', 33.98, 'Moderate Assessment', 'Insurance Eligible']
+['1209.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.89, 'bumper_dent', 95.43, 0.5981, 'Low', 38.53, 'Moderate Assessment', 'Insurance Eligible']
+['1245.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 97.86, 'tail_lamp', 29.3, 1.2527, 'Low', 12.47, 'Low Assessment', 'Not Insurance Eligible']
+['1282.jpeg', 'NOT_AVAILABLE', None, 'NO_SIGNIFICANT_DAMAGE', 99.6, None, None, None, None, None, None, None]
+['1292.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.41, 'unknown', 47.1, 1.149, 'Low', 19.53, 'Low Assessment', 'Not Insurance Eligible']
+['165.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 97.31, 'glass_shatter', 95.72, 0.0, 'Low', 38.29, 'Moderate Assessment', 'Insurance Eligible']
+['234.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 97.59, 'bumper_dent', 98.39, 0.0, 'Low', 39.35, 'Moderate Assessment', 'Insurance Eligible']
+['256.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.67, 'glass_shatter', 99.11, 0.0549, 'Low', 39.68, 'Moderate Assessment', 'Insurance Eligible']
+['494.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.71, 'door_dent', 70.56, 3.0304, 'Low', 30.04, 'Moderate Assessment', 'Insurance Eligible']
+['495.jpeg', 'NOT_AVAILABLE', None, 'NO_SIGNIFICANT_DAMAGE', 99.91, None, None, None, None, None, None, None]
+['501.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.81, 'door_scratch', 89.82, 0.0, 'Low', 35.93, 'Moderate Assessment', 'Insurance Eligible']
+['630.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 98.44, 'door_scratch', 93.74, 0.2411, 'Low', 37.64, 'Moderate Assessment', 'Insurance Eligible']
+['714.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.93, 'bumper_scratch', 99.96, 0.0, 'Low', 39.99, 'Moderate Assessment', 'Insurance Eligible']
+['760.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.76, 'tail_lamp', 98.75, 0.1648, 'Low', 39.6, 'Moderate Assessment', 'Insurance Eligible']
+['778.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.82, 'head_lamp', 98.61, 1.0193, 'Low', 40.05, 'Moderate Assessment', 'Insurance Eligible']
+['784.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.4, 'bumper_scratch', 80.42, 0.0198, 'Low', 32.18, 'Moderate Assessment', 'Insurance Eligible']
+['867.jpeg', 'NOT_AVAILABLE', None, 'DAMAGE', 99.71, 'glass_shatter', 99.15, 0.3662, 'Low', 39.88, 'Moderate Assessment', 'Insurance Eligible']
+['935.jpeg', 'NOT_AVAILABLE', None, 'NO_SIGNIFICANT_DAMAGE', 99.9, None, None, None, None, None, None, None]
+['992.jpeg', 'NOT_AVAILABLE', None, 'NO_SIGNIFICANT_DAMAGE', 99.86, None, None, None, None, None, None, None]
+Saved D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\final_pipeline_v2\external_results.csv
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>set SKIP_AI=
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\train_ai_detector.py --max_per_group 300 --epochs 3 --real_dir "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\image" "D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\internal_test_images\classification_segmentation_overlap"
+folder Dalle: 252 images
+folder Kandinsky: 999 images
+folder Midjourney: 1160 images
+folder SDXL: 999 images
+folder UnCLIP: 2816 images
+Real images from ['D:\\SEM5\\DEEP LEARNING\\END SEM PROJECT-DL\\image', 'D:\\SEM5\\DEEP LEARNING\\END SEM PROJECT-DL\\outputs\\internal_test_images\\classification_segmentation_overlap']: 1533
+split  generator
+test   Dalle          38
+       Kandinsky      45
+       Midjourney     45
+       SDXL           45
+       UnCLIP         45
+       real           45
+train  Dalle         176
+       Kandinsky     210
+       Midjourney    210
+       SDXL          210
+       UnCLIP        210
+       real          210
+val    Dalle          38
+       Kandinsky      45
+       Midjourney     45
+       SDXL           45
+       UnCLIP         45
+       real           45
+dtype: int64
+[INFO] Device: cpu
+epoch 1: val AUC 0.9755
+epoch 2: val AUC 0.9939
+epoch 3: val AUC 0.9955
+AI thresholds from validation: low=0.65 high=0.65
+Now run: python scripts/evaluate_ai_detector.py
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\test_internal_21.py
+[INFO] Device: CPU
+[INFO] Models loaded
+21 images -> D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\outputs\final_pipeline_v2\internal_21_results.csv
+Authenticity status counts: {'REAL': 21}
+Damage gate agrees with ground truth (unknown = no damage): 20/21
+Damage type correct on damaged images that reached classification: 13/15 (of 15 damaged)
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>python scripts\evaluate_ai_detector.py
+{
+  "overall_threshold_0.5": {
+    "TP": 217,
+    "TN": 42,
+    "FP": 3,
+    "FN": 1,
+    "accuracy": 0.9848,
+    "precision": 0.9864,
+    "recall": 0.9954,
+    "f1": 0.9909,
+    "false_positive_rate": 0.0667,
+    "false_negative_rate": 0.0046,
+    "roc_auc": 0.999
+  },
+  "overall_v2_band_uncertain_as_not_flagged": {
+    "TP": 216,
+    "TN": 43,
+    "FP": 2,
+    "FN": 2,
+    "accuracy": 0.9848,
+    "precision": 0.9908,
+    "recall": 0.9908,
+    "f1": 0.9908,
+    "false_positive_rate": 0.0444,
+    "false_negative_rate": 0.0092,
+    "roc_auc": 0.999
+  },
+  "uncertain_count": 0,
+  "n_test": 263,
+  "per_generator": {
+    "Dalle": {
+      "n": 38,
+      "detection_rate_at_0.5": 1.0
+    },
+    "Kandinsky": {
+      "n": 45,
+      "detection_rate_at_0.5": 1.0
+    },
+    "Midjourney": {
+      "n": 45,
+      "detection_rate_at_0.5": 1.0
+    },
+    "SDXL": {
+      "n": 45,
+      "detection_rate_at_0.5": 1.0
+    },
+    "UnCLIP": {
+      "n": 45,
+      "detection_rate_at_0.5": 0.9778
+    }
+  }
+}
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>start.bat
+
+(.venv) D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\AI-Vehicle-Damage-Assessment-Final>

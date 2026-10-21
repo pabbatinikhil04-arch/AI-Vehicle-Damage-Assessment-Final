@@ -1,0 +1,149 @@
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\LOGGING_VERSIONS\eff\AI-Vehicle-Damage-Assessment-Final"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\LOGGING_VERSIONS\eff\AI-Vehicle-Damage-Assessment-Final>"%P%\AI-Vehicle-Damage-Assessment-Final\.venv\Scripts\python.exe" -m uvicorn backend.main:app --host 127.0.0.1 --port 9101
+INFO:     Started server process [13444]
+INFO:     Waiting for application startup.
+[INFO] Device: CPU
+[INFO] Models loaded
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9101 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57128 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57128 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50105 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58137 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59572 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60412 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61654 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59269 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53613 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63922 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64837 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\LOGGING_VERSIONS\res\AI-Vehicle-Damage-Assessment-ResNet18"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\LOGGING_VERSIONS\res\AI-Vehicle-Damage-Assessment-ResNet18>"%P%\AI-Vehicle-Damage-Assessment-Final\.venv\Scripts\python.exe" -m uvicorn backend.main:app --host 127.0.0.1 --port 9102
+INFO:     Started server process [4084]
+INFO:     Waiting for application startup.
+[INFO] Device: CPU
+[INFO] Classifier: ResNet18 | Models loaded
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9102 (Press CTRL+C to quit)
+INFO:     127.0.0.1:63331 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54716 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56041 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60844 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51023 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64672 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50937 - "POST /predict HTTP/1.1" 200 OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+added 63 packages, and audited 64 packages in 4s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+2 vulnerabilities (1 moderate, 1 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> vehicle-damage-frontend-resnet18@2.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 910 ms
+
+  ➜  Local:   http://localhost:9202/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+11:17:50 am [vite] http proxy error: /predict
+Error: connect ECONNREFUSED 127.0.0.1:9102
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+
+
+
+
+
+
+
+
+
+
+
+
+added 63 packages, and audited 64 packages in 20s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+2 vulnerabilities (1 moderate, 1 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm notice
+npm notice New major version of npm available! 10.9.3 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+
+> vehicle-damage-frontend@2.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 903 ms
+
+  ➜  Local:   http://localhost:9201/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+11:15:56 am [vite] http proxy error: /predict
+Error: connect ECONNREFUSED 127.0.0.1:9101
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+11:16:11 am [vite] http proxy error: /predict
+Error: connect ECONNREFUSED 127.0.0.1:9101
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) (x2)

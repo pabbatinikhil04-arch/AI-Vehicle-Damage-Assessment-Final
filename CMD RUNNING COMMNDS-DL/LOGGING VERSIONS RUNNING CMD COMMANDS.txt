@@ -1,0 +1,215 @@
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-EfficientNet-Novelty"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-EfficientNet-Novelty>"%P%\AI-Vehicle-Damage-Assessment-Final\.venv\Scripts\python.exe" -m uvicorn backend.main:app --host 127.0.0.1 --port 9301
+INFO:     Started server process [2100]
+INFO:     Waiting for application startup.
+[INFO] Device: CPU
+[INFO] Models loaded
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9301 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57404 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55911 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59775 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56291 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62449 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52354 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64088 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57435 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57137 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49916 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53317 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57425 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56117 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63233 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62603 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51408 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58975 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59833 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51485 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53425 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64043 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63579 - "GET /logs/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64461 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53803 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65065 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50313 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53654 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56213 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53879 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59293 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54714 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60634 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50090 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63434 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57144 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55646 - "POST /predict HTTP/1.1" 200 OK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-EfficientNet-Novelty"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-EfficientNet-Novelty>start_frontend.bat
+
+added 63 packages, and audited 64 packages in 4s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+2 vulnerabilities (1 moderate, 1 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> vehicle-damage-frontend-novelty@2.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 836 ms
+
+  ➜  Local:   http://localhost:9401/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-ResNet18-Novelty"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-ResNet18-Novelty>"%P%\AI-Vehicle-Damage-Assessment-Final\.venv\Scripts\python.exe" -m uvicorn backend.main:app --host 127.0.0.1 --port 9302
+INFO:     Started server process [21220]
+INFO:     Waiting for application startup.
+[INFO] Device: CPU
+[INFO] Classifier: ResNet18 | Models loaded
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9302 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62145 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64146 - "POST /predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52049 - "GET /logs?limit=50 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63630 - "GET /logs/download HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52585 - "POST /predict HTTP/1.1" 200 OK
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-ResNet18-Novelty"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\NOVELTY_VERSIONS\AI-Vehicle-Damage-Assessment-ResNet18-Novelty>start_frontend.bat
+
+added 63 packages, and audited 64 packages in 3s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+2 vulnerabilities (1 moderate, 1 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> vehicle-damage-frontend-novelty-resnet18@2.0.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 659 ms
+
+  ➜  Local:   http://localhost:9402/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

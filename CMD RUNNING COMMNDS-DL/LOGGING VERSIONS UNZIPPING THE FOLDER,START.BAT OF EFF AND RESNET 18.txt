@@ -1,0 +1,90 @@
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>mkdir "%P%\LOGGING_VERSIONS\eff"
+
+C:\Users\LOQ>mkdir "%P%\LOGGING_VERSIONS\res"
+
+C:\Users\LOQ>tar -xf "%P%\efficientnetb0.zip" -C "%P%\LOGGING_VERSIONS\eff"
+
+C:\Users\LOQ>tar -xf "%P%\resnet18.zip" -C "%P%\LOGGING_VERSIONS\res"
+
+C:\Users\LOQ>cd /d "%P%"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL>python set_ports.py "%P%\LOGGING_VERSIONS\eff\AI-Vehicle-Damage-Assessment-Final" 9101 9201
+Done. Backend 8000 -> 9101, frontend 5173 -> 9201.
+Open: http://localhost:9201   Health: http://127.0.0.1:9101/health
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL>python set_ports.py "%P%\LOGGING_VERSIONS\res\AI-Vehicle-Damage-Assessment-ResNet18" 9102 9202
+Done. Backend 8001 -> 9102, frontend 5174 -> 9202.
+Open: http://localhost:9202   Health: http://127.0.0.1:9102/health
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\LOGGING_VERSIONS\eff\AI-Vehicle-Damage-Assessment-Final"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\LOGGING_VERSIONS\eff\AI-Vehicle-Damage-Assessment-Final>start.bat
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\LOGGING_VERSIONS\eff\AI-Vehicle-Damage-Assessment-Final>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Microsoft Windows [Version 10.0.26200.9550]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\LOQ>set P=D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL
+
+C:\Users\LOQ>cd /d "%P%\LOGGING_VERSIONS\res\AI-Vehicle-Damage-Assessment-ResNet18"
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\LOGGING_VERSIONS\res\AI-Vehicle-Damage-Assessment-ResNet18>start.bat
+
+D:\SEM5\DEEP LEARNING\END SEM PROJECT-DL\LOGGING_VERSIONS\res\AI-Vehicle-Damage-Assessment-ResNet18>
+
+
